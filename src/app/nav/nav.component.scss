@@ -1,0 +1,152 @@
+$veryDarkViolet: hsl(270, 9%, 17%);
+$darkGrayishViolet: hsl(273, 4%, 51%);
+$veryLightGray: hsl(0, 0%, 98%);
+$DarkViolet: hsl(256, 26%, 20%);
+$grayishBlue: hsl(216, 30%, 68%);
+* {
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+li {
+  list-style: none;
+  cursor: pointer;
+  color: $darkGrayishViolet;
+  transition: 1s;
+  &:hover {
+    color: $veryDarkViolet;
+  }
+}
+// header{
+//     align-items: center;
+// }
+
+.lists {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.navigation {
+  display: flex;
+  padding-top: 15px;
+  justify-content: space-around;
+  align-items: center;
+}
+.plans {
+  border: 1px solid $veryDarkViolet;
+  padding: 5px;
+  cursor: pointer;
+  width: 150px;
+  text-align: center;
+  transition: 1s;
+
+  &:hover {
+    background-color: $veryDarkViolet;
+    color: white;
+  }
+}
+.planss{
+  border: 1px solid $veryLightGray;
+  padding: 5px;
+  cursor: pointer;
+  width: 250px;
+  text-align: center;
+  transition: 1s;
+
+  &:hover {
+    background-color: $veryDarkViolet;
+    color: white;
+  }
+}
+.hamburger-menu {
+  display: none;
+}
+.close {
+  position: absolute;
+  cursor: pointer;
+  right: 10px;
+  top: 10px;
+}
+.icon-menu {
+  background: $veryDarkViolet;
+  backdrop-filter: blur(40.7742px);
+  position: absolute;
+
+  width: 100%;
+  height: 100vh;
+  right: 0px;
+  top: 10%;
+  color: #ffffff;
+  z-index: 99;
+}
+.icon-menu ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.icon-menu li {
+  margin-top: 30px;
+  height: 19px;
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  cursor: pointer;
+  color: #ffffff;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.hamburger-img {
+  width: 50%;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 475px) {
+  .hamburger-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .hamburger-logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+    width: 100%;
+    // gap: 60px;
+  }
+  .navigation img {
+    display: none;
+  }
+
+  .lists {
+    display: none;
+  }
+}
+@media (min-width:476px) and (max-width:1000px) {
+  // .navigation img{
+  //   width: 50px;
+  // }
+  .plans {
+    border: 1px solid $veryDarkViolet;
+    padding: 2px;
+    cursor: pointer;
+    width: 100px;
+    text-align: center;
+    transition: 1s;
+  }
+  .lists {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+}

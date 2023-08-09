@@ -1,0 +1,75 @@
+$veryDarkViolet: hsl(270, 9%, 17%);
+$darkGrayishViolet: hsl(273, 4%, 51%);
+$veryLightGray: hsl(0, 0%, 98%);
+$DarkViolet: hsl(256, 26%, 20%);
+$grayishBlue: hsl(216, 30%, 68%);
+
+footer {
+  background-color: $veryLightGray;
+}
+
+.flex-box {
+  display: flex;
+  justify-content: space-around;
+}
+.social {
+  display: flex;
+  gap: 20px;
+  .icon {
+    cursor: pointer;
+    transition: all 0.3s linear;
+  }
+}
+.icon img {
+  width: 100%;
+  height: 100%;
+  // transition: filter 0.3s;
+  
+}
+.icon:hover {
+  border-color: $veryDarkViolet; /* Change this to the desired border color */
+  transform: scale(1.2);
+}
+
+.icon:hover img {
+  filter: brightness(0) ; /* Change this to the desired color on hover */
+}
+hr {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer-text{
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: bold;
+  font-weight: 500;
+
+  p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+.title{
+  padding-bottom:20px;
+  color: $darkGrayishViolet;
+  cursor: pointer;
+
+  
+}
+@media only screen and (max-width: 475px) {
+  .flex-box{
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    align-items: center;
+  }
+  .footer-text{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-img{
+    width: 100%;
+  }
+}

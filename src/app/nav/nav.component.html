@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <nav>
+          <div class="hamburger-menu">
+            <div (click)="toogleMenu()" class="hamburger-logo">
+              <img
+                style="cursor: pointer"
+                src="./assets/imgaes/logo.svg"
+                alt=""
+              />
+              <img
+                style="cursor: pointer"
+                src="./assets/imgaes/icon-hamburger.svg"
+                alt=""
+              />
+            </div>
+
+            <div class="icon-menu" *ngIf="isMenuOpened">
+              <ul>
+                <div class="close">
+                  <img (click)="closeMenu()" src="./assets/imgaes/icon-close.svg" alt="" />
+                </div>
+
+                <li>HOW WE WORK</li>
+                <li>BLOG</li>
+                <li>ACCOUNT</li>
+                <div class="planss">VIEW PLANS</div>
+              </ul>
+            </div>
+          </div>
+          <ul class="navigation">
+            <img
+              style="cursor: pointer"
+              src="./assets/imgaes/logo.svg"
+              alt=""
+            />
+            <div class="lists">
+              <li>HOW WE WORK</li>
+              <li>BLOG</li>
+              <li>ACCOUNT</li>
+              <div class="plans">VIEW PLANS</div>
+            </div>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </body>
+</html>
